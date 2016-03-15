@@ -8,5 +8,5 @@ Members:
 	Dang Vu Lam
 	Nguyen Trong Nhan
 
-Project description
+Project description:
  	We aim to build the web version of Uber, a famous application on both iOs and Android to call taxi.
