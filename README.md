@@ -2,7 +2,7 @@
 USTH INT 2.8 2016 - Group 1
 
 Members:
-	Ngo Ha Anh
+	Ngo Ha Anh sida
 	Tran Thi Hong Hanh
 	Tran Trong Khanh
 	Dang Vu Lam
