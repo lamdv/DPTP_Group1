@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "App";
+}
+
+<div class="row">
+    <div id="map"></div>
+</div>
+
+<script type="text/javascript"
+        src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0">
+</script>
+
+<script>
+    $(function init() {
+        var geo = window.navigator.geolocation;
+        watchId = geo.watchPosition(successCb, failureCb);
+    });
+
+    function successCb(position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        showMap(lat, lon);
+    }
+
+    function failureCb(msg) {
+        alert(msg);
+    }
+
+    function showMap(lat, lon) {
+        alert(lat + "-" + lon);
+    }
+
+    function showMap(lat, lon) {
+        map = new Microsoft.Maps.Map(document.getElementById('map'), {
+            credentials: 'Apdup1tM8L5v3LKOeH41Nfd6C2mYbB8QliFTD4d3ONtjD9kTfLV5q9Pg6b_h_PsR',
+            center: new Microsoft.Maps.Location(lat, lon), zoom: 15
+        });
+        map.entities.clear();
+        var pushpin = new Microsoft.Maps.Pushpin(map.getCenter(), null);
+        map.entities.push(pushpin);
+    }
+</script>
