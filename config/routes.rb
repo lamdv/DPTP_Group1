@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/home' =>  'pages#home' #overide default route.
 
-  get '/profile' =>  'pages#profile'
+  get '/user/:id' =>  'pages#profile'
 
   get '/explore' => 'pages#explore'
 
