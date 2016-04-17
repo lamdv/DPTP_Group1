@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+
+#use Devise gem for authentication & user account
+gem 'devise'
 #for Twitter_Grabber UI components Inc navbar
 gem 'bootstrap-sass', '~> 3.3.6'
 
