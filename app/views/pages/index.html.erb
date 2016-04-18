@@ -1,27 +1,77 @@
 <% if !user_signed_in? %>
     <style>
-        html {
-            background: url("bg.jpg") no-repeat center center fixed; /* display one, center ho + vertical, dont let scroll change position */
-            
-            linear-gradient(
+        body {
+            background: linear-gradient(
             rgba(0,0,0,0.7),
-            rgba(0,0,0,0.7),
-            );
+            rgba(0,0,0,0.7)
+            ),
+            url("bg.jpg") no-repeat center center fixed; /* display one, center ho + vertical, dont let scroll change position */
             
             -webkit-background-size:cover;
             -moz-background-size:cover;
             -o-background-size:cover;
             background-size:cover;
         }
+        
         h1{
-            color: black;
+            color: white;
+            font-weight: bold;
+            
+        }
+        
+        .container-index{
+            margin-right: 15%;
+            margin-left: 15%;
+            color: white;
+        }
+        
+        .text{
+            color: weight;
+            font-weight: 300;
+            font-size: 150;
+        }
+        .footer-links{
+            text-align: center;
+            color: white;
+            margin-top: 20%;
+            font-size: 75%;
+        }
+        
+        .log-in{
+            float: right;
+            width: 300px;
+            height: 150px;
+        }
+        .sign-up{
+            float: right;
+            width: 300px;
+            height: 250px;
         }
     </style>
     
-     <div class="container">
-         <h1> WELCOME TO TWITTER GRABBER</h1>
-     </div>
+     <div class="container-index row">
+         <div class="col-sm-6">
+             <h1> Welcome to TWITTER GRABBER.</h1>
+             <p class = "text">
+                 Connect with your friends — and other fascinating people. <br>
+                 Get in-the-moment updates on the things that interest you. <br>
+                 Just like a blog with less characters.
+             </p>
+         </div>
+         <div class="col-sm-6">
+             <div class="log-in panel">
+             </div>
+              <div class="sign-up panel">
+             </div>
+         </div>
+         <div class="col-sm-12">
+             <p class="footer-links">About Help Blog Status Jobs Terms Privacy Cookies Ads info Brand Advertise Businesses Media Developers Directory <br> © 2016 TwitterGrabber </p>
+         </div>
         
+         
+     </div>
+     
+    
 <% else %>
-    Sign in!
+    <script>document.location = "/home"</script>
 <% end %>
