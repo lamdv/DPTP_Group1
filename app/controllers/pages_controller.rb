@@ -13,6 +13,7 @@ class PagesController < ApplicationController
     #grab username from URL as ID
     if (User.find_by_username(params[:id]))
       @username = params[:id]
+     # @created_at = user.created_at 
     else
       #redirect to 404
       redirect_to root_path, :notice=> "User not found!!"

@@ -1,2 +1,27 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+<% if !user_signed_in? %>
+    <style>
+        html {
+            background: url("bg.jpg") no-repeat center center fixed; /* display one, center ho + vertical, dont let scroll change position */
+            
+            linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7),
+            );
+            
+            -webkit-background-size:cover;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+            background-size:cover;
+        }
+        h1{
+            color: black;
+        }
+    </style>
+    
+     <div class="container">
+         <h1> WELCOME TO TWITTER GRABBER</h1>
+     </div>
+        
+<% else %>
+    Sign in!
+<% end %>
