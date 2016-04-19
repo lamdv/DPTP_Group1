@@ -32,7 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -49,3 +49,10 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'cucumber-rails', :require => false
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'factory_girl_rails', '~> 3.3.0'
+end
