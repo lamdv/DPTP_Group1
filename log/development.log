@@ -36015,3 +36015,23 @@ Processing by Devise::SessionsController#new as HTML
   Rendered layouts/_nav_guest.html.erb (0.5ms)
   Rendered layouts/_nav.html.erb (3.4ms)
 Completed 200 OK in 113ms (Views: 111.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 116.104.20.255 at 2016-04-24 06:23:32 +0000
+Cannot render console from 116.104.20.255! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (18.0ms)
+  Rendered layouts/_nav_guest.html.erb (1.5ms)
+  Rendered layouts/_nav.html.erb (4.5ms)
+Completed 200 OK in 709ms (Views: 685.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 116.104.20.255 at 2016-04-24 06:27:24 +0000
+Cannot render console from 116.104.20.255! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_nav_guest.html.erb (1.5ms)
+  Rendered layouts/_nav.html.erb (10.7ms)
+Completed 200 OK in 793ms (Views: 761.6ms | ActiveRecord: 0.0ms)
