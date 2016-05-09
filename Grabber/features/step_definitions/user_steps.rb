@@ -1,144 +1,95 @@
-### GIVEN ###
-Given /^I am not logged in$/ do
-  visit '/users/sign_out'
+Given(/^I do not exist as a user$/) do
+  pending
 end
 
-Given /^I am logged in$/ do
-  create_user
-  sign_in
+When(/^I sign in with valid credentials$/) do
+  pending
 end
 
-Given /^I exist as a user$/ do
-  create_user
+Then(/^I see an invalid login message$/) do
+  pending
 end
 
-Given /^I do not exist as a user$/ do
-  create_visitor
-  delete_user
+And(/^I should be signed out$/) do
+  pending
 end
 
-Given /^I exist as an unconfirmed user$/ do
-  create_unconfirmed_user
+Given(/^I exist as a user$/) do
+  pending
 end
 
-### WHEN ###
-When /^I sign in with valid credentials$/ do
-  create_visitor
-  sign_in
+And(/^I am not logged in$/) do
+  pending
 end
 
-When /^I sign out$/ do
-  visit '/users/sign_out'
+Then(/^I see a successful sign in message$/) do
+  pending
 end
 
-When /^I sign up with valid user data$/ do
-  create_visitor
-  sign_up
+When(/^I return to the site$/) do
+  pending
 end
 
-When /^I sign up with an invalid email$/ do
-  create_visitor
-  @visitor = @visitor.merge(:email => "notanemail")
-  sign_up
+Then(/^I should be signed in$/) do
+  pending
 end
 
-When /^I sign up without a password confirmation$/ do
-  create_visitor
-  @visitor = @visitor.merge(:password_confirmation => "")
-  sign_up
+When(/^I sign in with a wrong email$/) do
+  pending
 end
 
-When /^I sign up without a password$/ do
-  create_visitor
-  @visitor = @visitor.merge(:password => "")
-  sign_up
+When(/^I sign in with a wrong password$/) do
+  pending
 end
 
-When /^I sign up with a mismatched password confirmation$/ do
-  create_visitor
-  @visitor = @visitor.merge(:password_confirmation => "12345")
-  sign_up
+Given(/^I am logged in$/) do
+  pending
 end
 
-When /^I return to the site$/ do
-  visit '/'
+When(/^I sign out$/) do
+  pending
 end
 
-When /^I sign in with a wrong email$/ do
-  @visitor = @visitor.merge(:email => "example@example.com")
-  sign_in
+Then(/^I should see a signed out message$/) do
+  pending
 end
 
-When /^I sign in with a wrong password$/ do
-  @visitor = @visitor.merge(:password => "wrongpass")
-  sign_in
+When(/^I sign up with valid user data$/) do
+  pending
 end
 
-When /^I edit my account details$/ do
-  click_link "Edit account"
-  fill_in "user_name", :with => "newname"
-  fill_in "user_current_password", :with => @visitor[:password]
-  click_button "Update"
+Then(/^I should see a successful sign up message$/) do
+  pending
 end
 
-When /^I look at the list of users$/ do
-  visit '/'
+When(/^I sign up with an invalid email$/) do
+  pending
 end
 
-### THEN ###
-Then /^I should be signed in$/ do
-  page.should have_content "Logout"
-  page.should_not have_content "Sign up"
-  page.should_not have_content "Login"
+Then(/^I should see an invalid email message$/) do
+  pending
 end
 
-Then /^I should be signed out$/ do
-  page.should have_content "Sign up"
-  page.should have_content "Login"
-  page.should_not have_content "Logout"
+When(/^I sign up without a password$/) do
+  pending
 end
 
-Then /^I see an unconfirmed account message$/ do
-  page.should have_content "You have to confirm your account before continuing."
+Then(/^I should see a missing password message$/) do
+  pending
 end
 
-Then /^I see a successful sign in message$/ do
-  page.should have_content "Signed in successfully."
+When(/^I sign up without a password confirmation$/) do
+  pending
 end
 
-Then /^I should see a successful sign up message$/ do
-  page.should have_content "Welcome! You have signed up successfully."
+Then(/^I should see a missing password confirmation message$/) do
+  pending
 end
 
-Then /^I should see an invalid email message$/ do
-  page.should have_content "Email is invalid"
+When(/^I sign up with a mismatched password confirmation$/) do
+  pending
 end
 
-Then /^I should see a missing password message$/ do
-  page.should have_content "Password can't be blank"
-end
-
-Then /^I should see a missing password confirmation message$/ do
-  page.should have_content "Password doesn't match confirmation"
-end
-
-Then /^I should see a mismatched password message$/ do
-  page.should have_content "Password doesn't match confirmation"
-end
-
-Then /^I should see a signed out message$/ do
-  page.should have_content "Signed out successfully."
-end
-
-Then /^I see an invalid login message$/ do
-  page.should have_content "Invalid email or password."
-end
-
-Then /^I should see an account edited message$/ do
-  page.should have_content "You updated your account successfully."
-end
-
-Then /^I should see my name$/ do
-  create_user
-  page.should have_content @user[:name]
+Then(/^I should see a mismatched password message$/) do
+  pending
 end
