@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing My Controllers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @my_controllers.each do |my_controller| %>
+      <tr>
+        <td><%= link_to 'Show', my_controller %></td>
+        <td><%= link_to 'Edit', edit_my_controller_path(my_controller) %></td>
+        <td><%= link_to 'Destroy', my_controller, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New My controller', new_my_controller_path %>
