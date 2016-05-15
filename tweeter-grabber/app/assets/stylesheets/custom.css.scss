@@ -51,6 +51,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  color: #ffffff;
 }
 
 h1 {
@@ -165,7 +166,8 @@ aside {
     float: left;
     padding: 0 10px;
     border-left: 1px solid $gray-lighter;
-    color: gray;
+    color: #ffffff;
+    font-size: 12px;
     &:first-child {
       padding-left: 0;
       border: 0;
@@ -256,4 +258,25 @@ aside {
   padding-top: 10px;
   height: 970px;
 
+}
+.container1 {
+  width: 100%;
+  align-content:left;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+.btn.btn-large.btn-primary{
+  text-decoration-color: #ffffff;
+}
+ .checkbox {
+  width: 15px;
+ }
+.span5 {
+  color: #ffffff;
+  width: 100px;
+}
+
+.alert.alert-success {
+  
 }

@@ -13,5 +13,5 @@ Feature: Signing up
   Scenario: Unsuccessful signup
     Given a user visits the signup page
     When they submit invalid signup information
-    Then they should see error message
+    Then it should not create a user
     
