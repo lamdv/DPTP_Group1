@@ -41,9 +41,13 @@ textarea {
 }
 
 .center {
-  text-align: center;
+  height: 500px;
+  text-align: center ;
+  padding-top:30px;
   h1 {
-    margin-bottom: 10px;
+    margin-top: -100px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
   }
 }
 
@@ -256,7 +260,7 @@ aside {
 }
 .container {
   padding-top: 10px;
-  height: 970px;
+  height: 670px;
 
 }
 .container1 {
@@ -264,6 +268,11 @@ aside {
   align-content:left;
   padding-left: 25%;
   padding-right: 25%;
+}
+
+.container2 {
+  padding-top: -50px;
+  
 }
 
 .btn.btn-large.btn-primary{
