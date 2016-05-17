@@ -248,6 +248,24 @@
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
         null
       ],
       "/home/jiji/tweeter-grabber/app/controllers/sessions_controller.rb": [
@@ -402,7 +420,6 @@
         null,
         1,
         0,
-        0,
         null,
         null,
         1,
@@ -523,6 +540,6 @@
         null
       ]
     },
-    "timestamp": 1463304307
+    "timestamp": 1463457215
   }
 }

@@ -23,7 +23,7 @@ html {
 
 body {
   padding-top: 250px;
-  background:url('road-sky-sand-street-min.jpg') no-repeat center center;
+  background:url('road-sky-sand-street1.jpg') no-repeat center center;
 
   /* Ensure the html element always takes up the full height of the browser window */
   min-height:100%;
@@ -41,11 +41,14 @@ textarea {
 }
 
 .center {
-  text-align: center;
+  height: 500px;
+  text-align: center ;
+  padding-top:30px;
   h1 {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 }
+
 
 /* typography */
 
@@ -73,6 +76,7 @@ h2 {
 p {
   font-size: 1.1em;
   line-height: 1.7em;
+  color: #000000;
 }
 
 
@@ -240,6 +244,7 @@ input {
 }
 .content {
   display: block;
+  font-size: 14px;
 }
 .timestamp {
   color: $gray-light;
@@ -255,6 +260,7 @@ aside {
   }
 }
 .container {
+  margin-top: -170px;
   padding-top: 10px;
   height: 970px;
 
@@ -266,17 +272,85 @@ aside {
   padding-right: 25%;
 }
 
-.btn.btn-large.btn-primary{
-  text-decoration-color: #ffffff;
+.container2 {
+  width: 400px;
+  height: 400px;
+  align-content:center;
+  background-color: #ffffff;
+  align-self: center;
+  margin-left: 33%;
+  opacity: 50%;
+  border-radius: 5px;
+  
 }
+
+.container2-1 {
+  width: 400px;
+  height: 300px;
+  align-content:center;
+  background-color: #ffffff;
+  align-self: center;
+  margin-left: 33%;
+  opacity: 50%;
+  border-radius: 5px;
+  
+}
+
+
+.btn.btn-large.btn-primary{
+  color: #ffffff;
+}
+
  .checkbox {
   width: 15px;
  }
 .span5 {
-  color: #ffffff;
+  padding-top: 10%;
+  padding-left: 10%;
+  align-self: center;
+  padding-right: 10%;  
+}
+
+.span1 {
+  color: #000000;
   width: 100px;
 }
 
-.alert.alert-success {
-  
+.row {
+  width: 80%;
+  align-content:center;
+  align-self: center;
+  margin-left: 10%;
+}
+.span8 {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px 10px 10px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  a {
+    font-weight: bold;
+    font-size: 14px;
+    
+    }
+    &:hover {
+      text-decoration: none;
+      color: #000000;
+      font-size: 14px;
+    }
+}
+.timestamp {
+  font-style: italic;
+  color: #2b2b2b;
+  font-size: 12px;
+}
+.new_micropost {
+  background-color: #c9e9ff;
+  padding: 20px 20px 20px 20px;
+  border-radius: 4px;
+}
+.button-tweet {
+  padding-left: 85%;
+}
+.gravatar{
+  padding-top: 5px;
 }

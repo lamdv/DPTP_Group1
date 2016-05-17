@@ -1,8 +1,9 @@
 <% provide(:title, 'Sign up') %>
-<h1>Sign up</h1>
 
-<div class="container1">
-  <div class="span6 offset3">
+<h1><span style="font-weight: bold;color: #ffffff;">New to Twitter? Sign up</span></h1>
+
+<div class="container2">
+  <div class="span5 offset3">
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
 
@@ -17,6 +18,10 @@
 
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
+
+      <div class="checkbox pull-left">
+        <label><input type="checkbox"><div class="span1">Remember me</div></label>
+      </div>
 
       <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
     <% end %>

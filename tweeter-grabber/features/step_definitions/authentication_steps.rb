@@ -53,3 +53,21 @@ end
 Then /^it should not create a user$/ do
   expect(page).to have_selector('div.alert.alert-error')
 end
+
+Given /^a user on the homepage$/ do
+  expect(page).to have_title(@name)
+end
+
+When /^the user click signout path$/ do
+  click_link "Sign out"
+end
+
+Then /^they should see the static page$/ do
+  expect(page).to have_title(@name)
+end
+
+And /^they should see a signin link$/ do
+  expect(page).to have_link('Sign in', href: signin_path)
+end
+
+

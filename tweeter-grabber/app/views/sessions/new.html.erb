@@ -1,8 +1,8 @@
 <% provide(:title, "Sign in") %>
-<h1>Sign in</h1>
+<h1><span style="font-weight: bold;">Sign in</span></h1>
 
-<div class="container1">
-  <div class="span6 offset3">
+<div class="container2-1">
+  <div class="span5 offset3">
     <%= form_for(:session, url: sessions_path) do |f| %>
 
       <%= f.label :email %>
@@ -14,14 +14,14 @@
              
       
         <div class="checkbox pull-left">
-         <label><input type="checkbox"><div class="span5">Remember me</div></label>
+         <label><input type="checkbox"><div class="span1">Remember me</div></label>
         </div>
       
 
 
       <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
     <% end %>
-
+    <br>
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
   </div>
 </div>

@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-05-15T16:25:07+07:00">2016-05-15T16:25:07+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-05-17T10:53:35+07:00">2016-05-17T10:53:35+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">81.66%</span></span>
+    (<span class="covered_percent"><span class="yellow">81.36%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.17
+         1.15
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>24</b> files in total.
-    <b>229</b> relevant lines. 
-    <span class="green"><b>187</b> lines covered</span> and
-    <span class="red"><b>42</b> lines missed </span>
+    <b>236</b> relevant lines. 
+    <span class="green"><b>192</b> lines covered</span> and
+    <span class="red"><b>44</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -152,11 +152,11 @@
       
       <tr>
         <td class="strong"><a href="#108f3de6dcfe04274196411d2e038797e8816c6a" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
-        <td class="yellow strong">82.76 %</td>
-        <td>48</td>
-        <td>29</td>
+        <td class="yellow strong">85.71 %</td>
+        <td>47</td>
+        <td>28</td>
         <td>24</td>
-        <td>5</td>
+        <td>4</td>
         <td>1.4</td>
       </tr>
       
@@ -282,12 +282,12 @@
       
       <tr>
         <td class="strong"><a href="#7e3ca4420ef867bbe22d350bc6f6cc1be184aa24" class="src_link" title="features/step_definitions/authentication_steps.rb">features/step_definitions/authentication_steps.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>55</td>
-        <td>30</td>
-        <td>30</td>
-        <td>0</td>
-        <td>1.1</td>
+        <td class="green strong">92.11 %</td>
+        <td>73</td>
+        <td>38</td>
+        <td>35</td>
+        <td>3</td>
+        <td>1.0</td>
       </tr>
       
     </tbody>
@@ -1701,11 +1701,11 @@
         <div class="source_table" id="108f3de6dcfe04274196411d2e038797e8816c6a">
   <div class="header">
     <h3>app/models/user.rb</h3>
-    <h4><span class="yellow">82.76 %</span> covered</h4>
+    <h4><span class="yellow">85.71 %</span> covered</h4>
     <div>
-      <b>29</b> relevant lines. 
+      <b>28</b> relevant lines. 
       <span class="green"><b>24</b> lines covered</span> and
-      <span class="red"><b>5</b> lines missed.</span>
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -1919,82 +1919,76 @@
         <li class="missed" data-hits="0" data-linenumber="35">
           
           
-          <code class="ruby">    relations</code>
+          <code class="ruby">    relationships.create!(followed_id: other_user.id)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
-          <code class="ruby">    hips.create!(followed_id: other_user.id)</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
           <code class="ruby">  def unfollow!(other_user)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
+        <li class="missed" data-hits="0" data-linenumber="39">
           
           
           <code class="ruby">    relationships.find_by(followed_id: other_user.id).destroy</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="42">
           <span class="hits">1</span>
           
           <code class="ruby">  private</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
           <code class="ruby">    def create_remember_token</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
+        <li class="covered" data-hits="1" data-linenumber="45">
           <span class="hits">1</span>
           
           <code class="ruby">      self.remember_token = User.digest(User.new_remember_token)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="never" data-hits="" data-linenumber="46">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="never" data-hits="" data-linenumber="47">
           
           
           <code class="ruby">end</code>
@@ -3231,11 +3225,11 @@
         <div class="source_table" id="7e3ca4420ef867bbe22d350bc6f6cc1be184aa24">
   <div class="header">
     <h3>features/step_definitions/authentication_steps.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="green">92.11 %</span> covered</h4>
     <div>
-      <b>30</b> relevant lines. 
-      <span class="green"><b>30</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>38</b> relevant lines. 
+      <span class="green"><b>35</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -3570,6 +3564,114 @@
           
           
           <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Given /^a user on the homepage$/ do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  expect(page).to have_title(@name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">When /^the user click signout path$/ do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="62">
+          
+          
+          <code class="ruby">  click_link &quot;Sign out&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Then /^they should see the static page$/ do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="66">
+          
+          
+          <code class="ruby">  expect(page).to have_title(@name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="69">
+          <span class="hits">1</span>
+          
+          <code class="ruby">And /^they should see a signin link$/ do</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="70">
+          
+          
+          <code class="ruby">  expect(page).to have_link(&#39;Sign in&#39;, href: signin_path)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="71">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby"></code>
         </li>
       
     </ol>
