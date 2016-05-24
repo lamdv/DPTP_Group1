@@ -1,9 +1,17 @@
-<%= form_for(@micropost) do |f| %>
+<%= form_for @micropost, :html => { :multipart => true} do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
+
   <div class="field">
     <%= f.text_area :content, placeholder: "What's happening?" %>
   </div>
+
+  <div class="image">
+  	<%= f.file_field :image %>
+  </div>
+
   <div class="button-tweet">
   <%= f.submit "TWEET", class: "btn btn-large btn-primary" %>
   </div>
+
+
 <% end %>

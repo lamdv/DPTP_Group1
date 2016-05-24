@@ -24,4 +24,5 @@ SampleApp::Application.configure do
 
   # Debug mode disables concatenation and preprocessing of assets.
   config.assets.debug = true
+  Paperclip.options[:command_path] = "/usr/bin/"
 end

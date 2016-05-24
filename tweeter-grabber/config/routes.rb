@@ -1,5 +1,4 @@
 SampleApp::Application.routes.draw do
-  resources :my_controllers
   resources :users do
     member do
       get :following, :followers
