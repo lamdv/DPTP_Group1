@@ -4,24 +4,14 @@
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
 require 'simplecov'
-SimpleCov.start do
-  add_filter '/spec/'
-  add_filter '/config/'
-  add_filter '/lib/'
-  add_filter '/vendor/'
-
-  add_group 'controllers', 'apps/controllers'
-  add_group 'Models', 'app/models'
-  add_group 'Helpers', 'app/helpers' 
-  add_group 'Mailers', 'app/mailers'
-  add_group 'Views', 'app/views'
-end
+SimpleCov.start
 require 'cucumber/rails'
 
-# Capybara defaults to CSS3 selectors rather than XPath.
-# If you'd prefer to use XPath, just uncomment this line and adjust any
-# selectors in your step definitions to use the XPath syntax.
-# Capybara.default_selector = :xpath
+# Capybara defaults to XPath selectors rather than Webrat's default of CSS3. In
+# order to ease the transition to Capybara we set the default here. If you'd
+# prefer to use XPath just remove this line and adjust any selectors in your
+# steps to use the XPath syntax.
+Capybara.default_selector = :css
 
 # By default, any exception happening in your Rails application will bubble up
 # to Cucumber so that your scenario will fail. This is a different from how
@@ -53,7 +43,7 @@ end
 #
 #   Before('@no-txn,@selenium,@culerity,@celerity,@javascript') do
 #     # { :except => [:widgets] } may not do what you expect here
-#     # as Cucumber::Rails::Database.javascript_strategy overrides
+#     # as tCucumber::Rails::Database.javascript_strategy overrides
 #     # this setting.
 #     DatabaseCleaner.strategy = :truncation
 #   end

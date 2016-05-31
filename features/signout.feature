@@ -1,11 +1,11 @@
-Feature: Sign out
-  To protect account
-  A signed in user
-  Should be able to sign out
+Feature: Signing out
+  In order to keep authentication
+  A user
+  Should sign out
 
-    Scenario: User signs out
-      Given I am logged in
-      When I sign out
-      Then I should see a signed out message
-      When I return to the site
-      Then I should be signed out
+  
+  Scenario: Successful signout
+    Given a user on the homepage
+    When the user click signout path
+    Then they should see the static page
+    And they should see a signin link

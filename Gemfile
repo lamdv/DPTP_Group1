@@ -1,19 +1,14 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 #use Devise gem for authentication & user account
 gem 'devise'
 #for Twitter_Grabber UI components Inc navbar
 gem 'bootstrap-sass', '~> 3.3.6'
 
-#Simplecov for test coverage
-gem 'simplecov', :group => :test
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
-#gem 'sqlite3'
-# In order to deploy to Heroku, changing DBMS to postgres
-gem 'pg'
+gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -31,13 +26,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
+gem 'will_paginate', '~> 3.1.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-gem 'tzinfo-data', platforms: [:x64_mingw, :mingw, :mswin]
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -54,10 +49,12 @@ group :development do
   gem 'spring'
 end
 
-group :test do
-  gem 'cucumber-rails', :require => false
-  # database_cleaner is not required, but highly recommended
+group :development, :test do
+  gem "rspec-rails"
+  gem 'cucumber-rails'
   gem 'database_cleaner'
-  gem 'capybara'
-  gem 'factory_girl_rails', '~> 3.3.0'
 end
+gem 'simplecov', :require => false, :group => :test
+
+gem "paperclip", "~> 5.0.0.beta1"
+

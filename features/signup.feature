@@ -1,30 +1,17 @@
-Feature: Sign up
-  In order to create profile
-  As a user
-  I want to sign up
+Feature: Signing up
+  In order to use tweeter grabber
+  A user
+  Should sign up
 
-    Background:
-      Given I am not logged in
+  
+  Scenario: Successful signup
+    Given a user visits the signup page
+    When they submit valid signup information
+    Then they should see their profile page
+    And they should see success message
 
-    Scenario: User signs up with valid data
-      When I sign up with valid user data
-      Then I should see a successful sign up message
-      
-    Scenario: User signs up with invalid email
-      When I sign up with an invalid email
-      Then I should see an invalid email message
-
-    Scenario: User signs up without password
-      When I sign up without a password
-      Then I should see a missing password message
-
-    Scenario: User signs up without password confirmation
-      When I sign up without a password confirmation
-      Then I should see a missing password confirmation message
-
-    Scenario: User signs up with mismatched password and confirmation
-      When I sign up with a mismatched password confirmation
-      Then I should see a mismatched password message
-
-
-      
+  Scenario: Unsuccessful signup
+    Given a user visits the signup page
+    When they submit invalid signup information
+    Then it should not create a user
+    
