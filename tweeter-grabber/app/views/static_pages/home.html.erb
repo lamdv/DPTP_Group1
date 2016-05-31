@@ -1,0 +1,31 @@
+<% if signed_in? %>
+  <div class="row">
+    <aside class="span4">
+      <section>
+        <%= render 'shared/user_info' %>
+      </section>
+      <section>
+        <%= render 'shared/stats' %>
+      </section>
+      <section>
+        <%= render 'shared/micropost_form' %>
+      </section>
+    </aside>
+    <div class="span8">
+      <h3>News Feed</h3>
+      <%= render 'shared/feed' %>
+    </div>
+  </div>
+<% else %>
+  <div class="center hero-unit">
+    <h1><span style="color: #ffffff; font-size: 36px; font-style:bold; font-family: sans-serif;font-kerning: 5px; font-weight: bold;">WELCOME TO TWITTER GRABBER</span></h1>
+
+    <h2><span style="text-align:justify-all;color: #ffffff; font-size: 20px; line-height: 13px;"><br>Connect with your friends — and other fascinating people. <br><br> Get in-the-moment updates on the things that interest you. <br><br> And watch events unfold, in real time, from every angle.</span>
+    </h2>
+
+    <br><%= link_to "Sign up now!", signup_path,
+                                class: "btn btn-large btn-primary" %>
+  </div>
+
+ 
+<% end %>
