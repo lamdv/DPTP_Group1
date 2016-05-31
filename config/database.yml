@@ -5,24 +5,27 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
   pool: 5
   timeout: 5000
+  #encoding: 'SQL_ASCII'
+  template: template0
+  #host: /tmp
 
 development:
   <<: *default
-  database: db/database_development
+  database: database_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test: &test
   <<: *default
-  database: db/database_test
+  database: database_test
 
 production:
   <<: *default
-  database: db/database_production
+  database: database_production
 
 cucumber:
   <<: *test
